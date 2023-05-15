@@ -1,7 +1,9 @@
 name: Full Sync Tweets to Notion
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *" 
+  # 手动触发同步
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
